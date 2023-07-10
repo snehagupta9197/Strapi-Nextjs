@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "register_users",
+  "info": {
+    "singularName": "register-user",
+    "pluralName": "register-users",
+    "displayName": "registerUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "password": {
+      "type": "password",
+      "required": true,
+      "maxLength": 6
+    }
+  }
+}

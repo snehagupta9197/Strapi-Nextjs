@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_queries",
+  "info": {
+    "singularName": "contact-query",
+    "pluralName": "contact-queries",
+    "displayName": "contactQuery"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": false
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}
